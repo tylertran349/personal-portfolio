@@ -97,7 +97,8 @@ body {
     max-width: 3rem;
     color: inherit;
     animation: 0.75s chevron-down-bounce infinite alternate;
-    top: 2rem;
+    position: absolute;
+    bottom: 2rem;
 }
 
 @keyframes chevron-down-bounce {
