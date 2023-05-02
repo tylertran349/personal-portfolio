@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Avenir-Book;
+    src: url(./fonts/Avenir-Book.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(./fonts/Avenir-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Light;
+    src: url(./fonts/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(./fonts/Avenir-Medium.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Roman;
+    src: url(./fonts/Avenir-Roman.ttf);
+}
+
+@font-face {
+    font-family: Valencia;
+    src: url(./fonts/Valencia.ttf);
+}
+
+html {
+    font-size: 10px;
+    font-family: Avenir-Light, sans-serif;
+    --text-color: #e8e6e3;
+    --background-color: #181a1b;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#section {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#full-name {
+    font-family: Valencia, Avenir-Heavy, sans-serif;
+    font-size: 15rem;
+    animation-duration: 1s;
+    animation-name: name-animation;
+    animation-iteration-count: 1;
+}
+
+@keyframes name-animation {
+    from {
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#description {
+    font-family: Avenir-Roman, sans-serif; 
+    font-size: 5rem;
+    animation-duration: 1s;
+    animation-name: description-animation;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    opacity: 0; /* Make element invisible until animation completes */
+    animation-fill-mode: forwards; /* forwards applies final state of animation to element after the animation completes */
+}
+
+@keyframes description-animation {
+    from {
+        transform: translateY(-15.1rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#chevron-down-icon {
+    max-width: 3rem;
+    color: inherit;
+    animation: 0.75s chevron-down-bounce infinite alternate;
+    top: 2rem;
+}
+
+@keyframes chevron-down-bounce {
+    from {
+        transform: translateY(-2rem);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
