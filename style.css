@@ -40,7 +40,7 @@ body {
     margin: 0;
 }
 
-#section {
+#section-1 {
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -109,4 +109,43 @@ body {
     to {
         transform: translateY(0);
     }
+}
+
+#section-2 {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-title {
+    font-size: 10rem;
+    font-family: Avenir-Heavy, sans-serif;
+}
+
+#about-me-paragraphs {
+    max-width: 50vw;
+    font-size: 2rem;
+}
+
+.left {
+    opacity: 0;
+    transform: translateX(-30rem);
+    transition: all 1.25s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.right {
+    opacity: 0;
+    transform: translateX(30rem);
+    transition: all 1.25s ease-in-out;
+    transition-delay: 0.25s;
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
 }
