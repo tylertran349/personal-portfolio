@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
     })
 },
 {
-    threshold: 0.75
+    threshold: 0.5 /* Percentage of target element that must be visible for animation to run */
 });
 
 for(let i = 0; i < animation.length; i++) {
