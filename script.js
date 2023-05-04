@@ -2,15 +2,13 @@ const animation = document.querySelectorAll(".animation");
 const skillIcons = document.querySelectorAll(".bounce");
 
 skillIcons.forEach((icon) => {
-    const randomDelay = Math.floor(Math.random() * 3000);
+    const randomDelay = Math.floor(Math.random() * 5000); // Generate random animation delay between 0-5 seconds
     icon.style.animationDelay = `${randomDelay}ms`;
     icon.addEventListener("mouseover", () => {
-        console.log("hovered")
-        icon.querySelector("div").style.opacity = "1";
+        icon.querySelector("div").style.opacity = "1"; // Show popup on hover
     });
     icon.addEventListener("mouseout", () => {
-        console.log("mouse left")
-        icon.querySelector("div").style.opacity = "0";
+        icon.querySelector("div").style.opacity = "0"; // Hide popup once mouse leaves icon
     });
 });
 
