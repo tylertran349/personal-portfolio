@@ -1,4 +1,18 @@
 const animation = document.querySelectorAll(".animation");
+const skillIcons = document.querySelectorAll(".bounce");
+
+skillIcons.forEach((icon) => {
+    const randomDelay = Math.floor(Math.random() * 3000);
+    icon.style.animationDelay = `${randomDelay}ms`;
+    icon.addEventListener("mouseover", () => {
+        console.log("hovered")
+        icon.querySelector("div").style.opacity = "1";
+    });
+    icon.addEventListener("mouseout", () => {
+        console.log("mouse left")
+        icon.querySelector("div").style.opacity = "0";
+    });
+});
 
 const observer = new IntersectionObserver((entries) => {
     console.log(entries);
