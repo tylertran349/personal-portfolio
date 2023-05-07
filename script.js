@@ -17,6 +17,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add("scroll-animation");
+            observer.unobserve(entry.target); // Stop observing target element
         } else {
             entry.target.classList.remove("scroll-animation");
         }
