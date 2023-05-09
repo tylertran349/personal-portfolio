@@ -30,10 +30,14 @@
 
 html {
     font-size: 10px;
-    font-family: Avenir-Light, sans-serif;
-    --text-color: #e8e6e3;
-    --background-color: #181a1b;
+    font-family: "Libre Franklin", sans-serif;
+    --text-color: black;
+    --alternative-title-color: #e5e7eb;
+    --background-color: white;
     --hover-text-background-color: #141516;
+    --button-color: #323638;
+    --button-color-on-hover: #3a4042;
+    --border-radius: 0.5rem;
 }
 
 body {
@@ -52,7 +56,7 @@ body {
 }
 
 #full-name {
-    font-family: Valencia, Avenir-Heavy, sans-serif;
+    font-family: Valencia, "Libre Franklin", sans-serif;
     font-size: 15rem;
     animation-duration: 1s;
     animation-name: name-animation;
@@ -71,8 +75,7 @@ body {
     }
 }
 
-#description {
-    font-family: Avenir-Roman, sans-serif; 
+#section-1 #description {
     font-size: 5rem;
     animation-duration: 1s;
     animation-name: description-animation;
@@ -123,15 +126,18 @@ body {
 }
 
 #section-title {
-    min-width: 50vw;
-    font-size: 7.5rem;
-    font-family: Avenir-Heavy, sans-serif;
+    font-size: 5rem;
     text-align: center;
 }
 
 #about-me-paragraphs {
+    font-weight: 300;
     max-width: 50vw;
     font-size: 2rem;
+}
+
+.regular-font {
+    font-weight: 400;
 }
 
 .left {
@@ -194,7 +200,6 @@ body {
     padding: 1rem;
     border: 0.1rem solid rgb(59, 59, 59);
     transform: translateY(-50%);
-    font-family: Avenir-Book, sans-serif;
     opacity: 0; /* Make icon title/annotation invisible by default */
 }
 
@@ -269,7 +274,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -277,12 +282,40 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 40%;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 40%;
+}
+
+#project-description #stack {
+    font-size: 1.5rem;
+}
+
+#project-description #description {
+    font-size: 2rem;
+}
+
+#project-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button {
+    color: inherit;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-color-on-hover);
 }
 
 /* Placeholder, replace with GIF preview of project */
 #project-preview {
-    width: 40%;
     height: 200px;
+    min-width: 50vw;
+    background-color: red;
 }
