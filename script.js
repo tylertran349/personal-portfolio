@@ -12,11 +12,11 @@ skillIcons.forEach((icon) => {
     });
 });
 
-const sectionTwoObserver = new IntersectionObserver((entries) => {
+const sectionObservers = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add("scroll-animation");
-            sectionTwoObserver.unobserve(entry.target); // Stop observing target element
+            sectionObservers.unobserve(entry.target); // Stop observing target element
         } else {
             entry.target.classList.remove("scroll-animation");
         }
@@ -28,5 +28,5 @@ const sectionTwoObserver = new IntersectionObserver((entries) => {
 
 for(let i = 0; i < animation.length; i++) {
     let elements = animation[i];
-    sectionTwoObserver.observe(elements);
+    sectionObservers.observe(elements);
 }
