@@ -34,10 +34,11 @@ html {
     --text-color: black;
     --alternative-title-color: #e5e7eb;
     --background-color: white;
-    --hover-text-background-color: #141516;
     --button-color: #323638;
     --button-color-on-hover: #3a4042;
-    --border-radius: 0.5rem;
+    --border-radius: 0.3rem;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-x: hidden;
 }
 
 body {
@@ -130,9 +131,15 @@ body {
     text-align: center;
 }
 
+#project-title {
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+}
+
 #about-me-paragraphs {
-    font-weight: 300;
     max-width: 50vw;
+    font-weight: 300;
     font-size: 2rem;
 }
 
@@ -142,21 +149,21 @@ body {
 
 .left {
     opacity: 0;
-    transform: translateX(-49%);
+    transform: translateX(-50%);
     transition: all 1.25s ease-in-out;
     transition-delay: 0.25s;
 }
 
 .right {
     opacity: 0;
-    transform: translateX(49%);
+    transform: translateX(50%);
     transition: all 1.25s ease-in-out;
     transition-delay: 0.25s;
 }
 
 .scroll-animation {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0%);
 }
 
 #section-3 {
@@ -194,11 +201,11 @@ body {
 }
 
 #skill-icon div {
-    background-color: var(--hover-text-background-color);
+    background-color: var(--background-color);
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
-    border: 0.1rem solid rgb(59, 59, 59);
+    border: 0.1rem solid black;
     transform: translateY(-50%);
     opacity: 0; /* Make icon title/annotation invisible by default */
 }
@@ -269,12 +276,12 @@ body {
     }
 }
 
-#section-4 {
+#section-4, #section-5, #section-6, #section-7, #section-8 {
     min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -288,7 +295,7 @@ body {
 }
 
 #project-description #stack {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 #project-description #description {
@@ -301,7 +308,10 @@ body {
 }
 
 button {
-    color: inherit;
+    font-size: 1.6rem;
+    font-family: inherit;
+    font-weight: 700;
+    color: var(--background-color);
     background-color: var(--button-color);
     border: none;
     border-radius: var(--border-radius);
@@ -315,7 +325,8 @@ button:hover {
 
 /* Placeholder, replace with GIF preview of project */
 #project-preview {
-    height: 200px;
-    min-width: 50vw;
-    background-color: red;
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: var(--box-shadow);
 }
