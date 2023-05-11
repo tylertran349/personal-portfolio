@@ -102,20 +102,24 @@
             </div>
         </div>
         <div id="section-4">
-            <div id="project-description" class="animation left">
-                <span id="project-title">Blog</span>
-                <span id="stack">React | JavaScript | MongoDB | Express | Node.js</span>
-                <span id="description">A blog that uses a custom-made REST API as its back-end. Anyone can sign up and make posts and comments!</span>
-                <div id="project-links">
-                    <button onclick="window.open('https://blog-front-end-production.up.railway.app/')">Live</button>
-                    <button onclick="window.open('https://github.com/tylertran349/blog-front-end')">Repository (Front-end)</button>
-                    <button onclick="window.open('https://github.com/tylertran349/blog-api')">Repository (REST API)</button>
+            <span id="section-title">Projects</span>
+            <div id="project">
+                <div id="project-description" class="animation left">
+                    <span id="project-title">Blog</span>
+                    <span id="stack">React | JavaScript | MongoDB | Express | Node.js</span>
+                    <span id="description">A blog that uses a custom-made REST API as its back-end. Anyone can sign up and make posts and comments!</span>
+                    <div id="project-links">
+                        <button onclick="window.open('https://blog-front-end-production.up.railway.app/')">Live</button>
+                        <button onclick="window.open('https://github.com/tylertran349/blog-front-end')">Repository (Front-end)</button>
+                        <button onclick="window.open('https://github.com/tylertran349/blog-api')">Repository (REST API)</button>
+                    </div>
                 </div>
+                <img id="project-preview" src="gifs/BlogGIF.gif" alt="GIF preview of blog" class="animation right" />
             </div>
-            <img id="project-preview" src="gifs/BlogGIF.gif" alt="GIF preview of blog" class="animation right" />
         </div>
         <div id="section-5">
-            <div id="project-description" class="animation left">
+            <img id="project-preview" src="gifs/ForumGIF.gif" alt="GIF preview of forum" class="animation left" />
+            <div id="project-description" class="animation right">
                 <span id="project-title">Secret Forum</span>
                 <span id="stack">Node.js | Express | MongoDB | Pug | CSS</span>
                 <span id="description">A forum where only members can make posts and view a forum post's author and timestamp. To become a member, you must sign up and enter a secret passcode.</span>
@@ -124,7 +128,53 @@
                     <button onclick="window.open('https://github.com/tylertran349/secret-forum')">Repository</button>
                 </div>
             </div>
-            <img id="project-preview" src="gifs/ForumGIF.gif" alt="GIF preview of forum" class="animation right" />
+        </div>
+        <div id="section-6">
+            <div id="project-description" class="animation left">
+                <span id="project-title">Weather App</span>
+                <span id="stack">JavaScript | HTML | CSS</span>
+                <span id="description">A weather forecast website that shows you the current weather, hour-by-hour forecast, and 14-day forecast for any location in the world. Uses data from <i>OpenWeatherMap Weather API</i> and <i>Open-Meteo Weather and Geocoding APIs.</i></span>
+                <div id="project-links">
+                    <button onclick="window.open('https://tylertran349.github.io/weather-app/')">Live</button>
+                    <button onclick="window.open('https://github.com/tylertran349/weather-app')">Repository</button>
+                </div>
+            </div>
+            <img id="project-preview" src="gifs/WeatherAppGIF.gif" alt="GIF preview of weather app" class="animation right" />
+        </div>
+        <div id="section-7">
+            <img id="project-preview" src="gifs/ResumeBuilderGIF.gif" alt="GIF preview of forum" class="animation left" />
+            <div id="project-description" class="animation right">
+                <span id="project-title">Resumé Builder</span>
+                <span id="stack">React | CSS</span>
+                <span id="description">A website that generates a resumé/CV in real-time as you input information.</span>
+                <div id="project-links">
+                    <button onclick="window.open('https://tylertran349.github.io/resume-builder/')">Live</button>
+                    <button onclick="window.open('https://github.com/tylertran349/resume-builder')">Repository</button>
+                </div>
+            </div>
+        </div>
+        <div id="section-8">
+            <div id="project-description" class="animation left">
+                <span id="project-title">Tic-Tac-Toe</span>
+                <span id="stack">JavaScript | HTML | CSS</span>
+                <span id="description">A recreation of the classic board game, built using object-oriented programming principles.</span>
+                <div id="project-links">
+                    <button onclick="window.open('https://tylertran349.github.io/tic-tac-toe/')">Live</button>
+                    <button onclick="window.open('https://github.com/tylertran349/tic-tac-toe')">Repository</button>
+                </div>
+            </div>
+            <img id="project-preview" src="gifs/TicTacToeGIF.gif" alt="GIF preview of weather app" class="animation right" />
+            <button id="more-projects-link" onclick="window.open('https://github.com/tylertran349/repos')">10+ More...</button>
+        </div>
+        <div id="section-9">
+            <form method="POST" action="https://formspree.io/f/mqkojakg" id="contact-form">
+                <legend id="section-title">Contact</legend>
+                <span>Have any questions, an opportunity to share, or just want to chat? Leave your details below, and I will get back to you promptly.</span>
+                <input type="text" id="name" name="name" placeholder="Name">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </body>
 </html>
