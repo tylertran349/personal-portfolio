@@ -59,7 +59,7 @@ body {
 }
 
 #header-links {
-    margin: 2rem;
+    margin: 2rem 4rem 2rem 0rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -263,7 +263,7 @@ a.underline-hover-effect {
     font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem;
-    border: 0.1rem solid black;
+    box-shadow: var(--box-shadow);
     transform: translateY(-50%);
     opacity: 0; /* Make icon title/annotation invisible by default */
 }
