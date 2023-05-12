@@ -157,7 +157,6 @@ a.underline-hover-effect {
 
 #chevron-down-icon {
     max-width: 3rem;
-    color: inherit;
     animation: 0.75s chevron-down-bounce infinite alternate;
     position: absolute;
     bottom: 2rem;
@@ -257,10 +256,12 @@ a.underline-hover-effect {
     object-fit: cover;
 }
 
+/* Styling for skill icon on hover caption/popup */
 #skill-icon div {
     background-color: var(--background-color);
     text-align: center;
     font-size: 1.5rem;
+    font-weight: 500;
     padding: 1rem;
     border: 0.1rem solid black;
     transform: translateY(-50%);
