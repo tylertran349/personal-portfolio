@@ -182,14 +182,63 @@ a.underline-hover-effect {
     align-items: center;
 }
 
-#section-title {
-    font-size: 5rem;
+#section-title-container {
+    position: relative;
+    z-index: 0;
+}
+
+#section-title-text {
+    font-size: 4rem;
     text-align: center;
+}
+
+#section-2 #section-title-background {
+    position: absolute;
+    background-color: #60d38b;
+    z-index: -1;
+    transform: rotate(-2deg) translateX(-50%) translateY(-75%); /* Rotate counterclockwise by 3 degrees, move to left by half its width, move upwards by 75% of its height */
+    width: 30rem;
+    height: 2.5rem;
+    top: 50%;
+    left: 50%; /* Moves the left edge of the background to the center of the container */
+}
+
+#section-3 #section-title-background {
+    position: absolute;
+    background-color: gold;
+    z-index: -1;
+    transform: rotate(-2deg) translateX(-50%) translateY(-75%); /* Rotate counterclockwise by 3 degrees, move to left by half its width, move upwards by 75% of its height */
+    width: 30rem;
+    height: 2.5rem;
+    top: 50%;
+    left: 50%; /* Moves the left edge of the background to the center of the container */
+}
+
+#section-4 #section-title-background {
+    position: absolute;
+    background-color: #f17878;
+    z-index: -1;
+    transform: rotate(-2deg) translateX(-50%) translateY(-75%); /* Rotate counterclockwise by 3 degrees, move to left by half its width, move upwards by 75% of its height */
+    width: 30rem;
+    height: 2.5rem;
+    top: 50%;
+    left: 50%; /* Moves the left edge of the background to the center of the container */
+}
+
+#section-9 #section-title-background {
+    position: absolute;
+    background-color: #e64ce6;
+    z-index: -1;
+    transform: rotate(-2deg) translateX(-50%) translateY(-75%); /* Rotate counterclockwise by 3 degrees, move to left by half its width, move upwards by 75% of its height */
+    width: 30rem;
+    height: 2.5rem;
+    top: 50%;
+    left: 50%; /* Moves the left edge of the background to the center of the container */
 }
 
 #project-title {
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
 
