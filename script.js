@@ -15,9 +15,14 @@ skillIcons.forEach((icon) => {
 const sectionObservers = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
-            entry.target.classList.add("scroll-animation");
+            if(entry.target.classList.contains('animation') && (entry.target.classList.contains('left') || entry.target.classList.contains('right'))) {
+                entry.target.classList.add("scroll-animation");
+            } else if(entry.target.classList.contains('animation') && (entry.target.classList.contains('fade-in') || entry.target.classList.contains('delayed-fade-in'))) {
+                entry.target.classList.add("fade-in-animation");
+            }
             sectionObservers.unobserve(entry.target); // Stop observing target element
         } else {
+            entry.target.classList.remove("fade-in-animation");
             entry.target.classList.remove("scroll-animation");
         }
     })
