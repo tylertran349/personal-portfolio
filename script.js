@@ -19,11 +19,14 @@ const sectionObservers = new IntersectionObserver((entries) => {
                 entry.target.classList.add("scroll-animation");
             } else if(entry.target.classList.contains('animation') && (entry.target.classList.contains('fade-in') || entry.target.classList.contains('delayed-fade-in'))) {
                 entry.target.classList.add("fade-in-animation");
+            } else if(entry.target.classList.contains('animation') && entry.target.classList.contains('rotate')) {
+                entry.target.classList.add("rotate-animation");
             }
             sectionObservers.unobserve(entry.target); // Stop observing target element
         } else {
             entry.target.classList.remove("fade-in-animation");
             entry.target.classList.remove("scroll-animation");
+            entry.target.classList.remove("rotate-animation");
         }
     })
 },
