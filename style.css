@@ -252,6 +252,18 @@ a.underline-hover-effect {
     font-weight: 400;
 }
 
+.rotate {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transition: all 1.75s ease-out;
+    transition-delay: 0.25s;
+}
+
+.rotate-animation {
+    opacity: 1;
+    transform: rotate(0);
+}
+
 .fade-in {
     opacity: 0;
     transition: opacity 2s ease-in-out;
