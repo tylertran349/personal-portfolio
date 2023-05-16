@@ -252,6 +252,21 @@ a.underline-hover-effect {
     font-weight: 400;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.delayed-fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    transition-delay: 1.5s;
+}
+
+.fade-in-animation {
+    opacity: 1;
+}
+
 .left {
     opacity: 0;
     transform: translateX(-50%);
