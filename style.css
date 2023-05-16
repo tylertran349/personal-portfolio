@@ -34,6 +34,7 @@ html {
     --text-color: black;
     --alternative-title-color: #e5e7eb;
     --background-color: white;
+    --alternative-background-color: #afafaf;
     --button-color: #323638;
     --button-color-on-hover: #3a4042;
     --border-radius: 0.3rem;
@@ -483,7 +484,7 @@ button:hover, input[type="submit"]:hover {
 
 #section-9 {
     min-height: 100vh;
-    background-color: #afafaf;
+    background-color: var(--alternative-background-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -537,4 +538,23 @@ textarea {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+#social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 10rem;
+}
+
+#social-media-icons img {
+    width: 4rem;
+    aspect-ratio: 1/1;
+}
+
+#social-media-icons img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
 }
